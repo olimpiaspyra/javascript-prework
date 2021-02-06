@@ -123,7 +123,7 @@ function playGame (playerInput) {
 	}
 
 	displayScore (displayResult (computerMove, playerMove));
-	document.getElementById ('result').innerHTML = 'Wygrane komputera ' + computerPoint + ', wygrane gracza ' + playerPoint;	
+	document.getElementById ('result').innerHTML = 'Wygrane komputera: ' + computerPoint + ', Wygrane gracza: ' + playerPoint;	
 
 }
 
