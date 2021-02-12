@@ -1,9 +1,9 @@
 {
+  let computerPoint = 0;
+  let playerPoint = 0;
+
   const playGame = function (playerInput) {
     clearMessages();
-
-    let computerPoint = 0;
-    let playerPoint = 0;
 
     const randomNumber = Math.floor(Math.random() * 3 + 1);
 
@@ -20,7 +20,7 @@
     // 	computerMove = 'nożyce';
     // }
 
-    const getMoveName = function (argMoveId) {
+    function getMoveName(argMoveId) {
       if (argMoveId == 1) {
         return "kamień";
       } else if (argMoveId == 2) {
@@ -28,7 +28,7 @@
       } else if (argMoveId == 3) {
         return "nożyce";
       }
-    };
+    }
 
     printMessage("Mój ruch to: " + computerMove);
     printMessage("Twój ruch to: " + playerMove);
